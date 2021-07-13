@@ -12,6 +12,7 @@
 #
 # import os
 # import sys
+import ablog
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -36,7 +37,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['_templates', ablog.get_html_templates_path()]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
