@@ -12,7 +12,6 @@
 #
 # import os
 # import sys
-import ablog
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -32,15 +31,12 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.extlinks',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'alabaster',
     'ablog',
+    'sphinx.ext.intersphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates', ablog.get_html_templates_path()]
+templates_path = ['_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
